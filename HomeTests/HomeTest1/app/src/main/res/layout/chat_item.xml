@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/avatar_image"
+        android:layout_width="@dimen/avatar_width"
+        android:layout_height="@dimen/avatar_height"
+        android:scaleType="centerInside"
+        android:src="@color/blue"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/header_and_data_container"
+        android:layout_width="@dimen/chat_box_width"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/avatar_image">
+        <TextView
+            android:id="@+id/header_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/text_info_color"  />
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/chat_data_container"/>
+    </LinearLayout>
+
+</RelativeLayout>

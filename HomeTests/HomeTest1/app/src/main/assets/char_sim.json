@@ -1,0 +1,139 @@
+{
+    "messages": [
+        {
+            "id": 34562456,
+            "received_at": 1418760832,
+            "sender": {
+                "id": 5993,
+                "firstname": "Steve",
+                "lastname": "Jobs",
+                "avatar": "https: //pbs.twimg.com/profile_images/1225697793/steve_jobs.jpg",
+                "is_me": false
+            },
+            "content": {
+                "type": "text",
+                "content": "Hey! How are you guys?"
+            }
+        },
+        {
+            "id": 34562457,
+            "received_at": 1418760888,
+            "sender": {
+                "id": 2451,
+                "firstname": "Bill",
+                "lastname": "Gates",
+                "avatar": "https://pbs.twimg.com/profile_images/1884069342/BGtwitter.JPG",
+                "is_me": false
+            },
+            "content": {
+                "type": "text",
+                "content": "I'm alright, thank's for asking."
+            }
+        },
+        {
+            "id": 34562459,
+            "received_at": 1418760898,
+            "sender": {
+                "id": 2451,
+                "firstname": "Bill",
+                "lastname": "Gates",
+                "avatar": "https://pbs.twimg.com/profile_images/1884069342/BGtwitter.JPG",
+                "is_me": false
+            },
+            "content": {
+                "type": "text",
+                "content": "Where are you right now?"
+            }
+        },
+        {
+            "id": 34562460,
+            "received_at": 1418760955,
+            "sender": {
+                "id": 5993,
+                "firstname": "Steve",
+                "lastname": "Jobs",
+                "avatar": "https: //pbs.twimg.com/profile_images/1225697793/steve_jobs.jpg",
+                "is_me": false
+            },
+            "content": {
+                "type": "location",
+                "content": "37.362565, -122.034747"
+            }
+        },
+        {
+            "id": 34562461,
+            "received_at": 1418760130,
+            "sender": {
+                "id": 2345,
+                "firstname": "Mr",
+                "lastname": "Jones",
+                "avatar": "http://idx-images.cisdata.net/acnt/images/292/AR440292/file_manager/geek_image.jpg",
+                "is_me": true
+            },
+            "content": {
+                "type": "text",
+                "content": "Wow! nice! look at you having fun and I'm here in Tel Aviv..."
+            }
+        },
+        {
+            "id": 34562462,
+            "received_at": 1418760155,
+            "sender": {
+                "id": 2345,
+                "firstname": "Mr",
+                "lastname": "Jones",
+                "avatar": "http://idx-images.cisdata.net/acnt/images/292/AR440292/file_manager/geek_image.jpg",
+                "is_me": true
+            },
+            "content": {
+                "type": "image",
+                "content": "http://powerrabbi.com/wp-content/uploads/2013/10/tel-aviv.jpg"
+            }
+        },
+        {
+            "id": 34562463,
+            "received_at": 1418760200,
+            "sender": {
+                "id": 2451,
+                "firstname": "Bill",
+                "lastname": "Gates",
+                "avatar": "https://pbs.twimg.com/profile_images/1884069342/BGtwitter.JPG",
+                "is_me": false
+            },
+            "content": {
+                "type": "text",
+                "content": "Hey Steve? How did Anatoliy get into our conversation?"
+            }
+        },
+        {
+            "id": 34562464,
+            "received_at": 1418760222,
+            "sender": {
+                "id": 5993,
+                "firstname": "Steve",
+                "lastname": "Jobs",
+                "avatar": "https: //pbs.twimg.com/profile_images/1225697793/steve_jobs.jpg",
+                "is_me": false
+            },
+            "content": {
+                "type": "text",
+                "content": "I really don't know..."
+            }
+        },
+        {
+            "id": 34562465,
+            "received_at": 1418760235,
+            "sender": {
+                "id": -1,
+                "firstname": "System Messge",
+                "lastname": null,
+                "avatar": "http://img4.wikia.nocookie.net/__cb20121123224529/looneytunes/images/a/ae/The_Brain.gif",
+                "is_me": false
+            },
+            "content": {
+                "type": "text",
+                "content": "Mr. Jones got kicked out of the conversation"
+            }
+        }
+    ]
+}

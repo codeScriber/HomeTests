@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Sound Cloud Track Search</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="go_text">GO!</string>
+    <string name="no_title_item">No Title</string>
+    <string name="title_activity_track_hear_see">TrackHearSeeActivity</string>
+    <string name="error_opening_track">Sorry, could not open track</string>
+</resources>
