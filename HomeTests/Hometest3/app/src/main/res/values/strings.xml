@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Home test</string>
+    <string name="wait_dialog_msg">asking server about animals...</string>
+    <string name="err_json_get">an error occured retrieving animals from the server.</string>
+</resources>

@@ -1,0 +1,34 @@
+1. no external libraries so the eaiest way for me to handle http is using HttpUrlconnection and AsyncTask.
+2. since AsyncTask is not great with orienation change and no requirement is made i decided it's best not to support 
+l  andscape(yup a lot eaiser)
+3. First stage i think i'll make one list, load the json in the background, since no requierement is made i'll 
+   save it as is to shared prefs, which are synchrnozied and optimzed for fast laoding, if the json was very big
+   this would not be very effecient to parse it on every app startup. DB or seralizing to file would be better in that case,
+   or at least save all the aniaml's names in a list and save each animal json as a small shared pref.
+4. The json itself will be kep as a list in an adapter, first stage simple list, simple adapter. no images.
+5. since connectivity can constantly chage i'll have to react for timeouts and no connection: for the 
+   json if no connectivity while executing async task, exit the app, for the images, mark it in red.
+6. wait dialog, when waiting for the first tiome for the json, show wait dialog, leaving the dialog before the async task means leaving the app.
+   there are nicer ui ways to show waiting and disable the screen but i'll admit i never used them in the past, even DialogFragment i used less and
+   don't have the time to recall...
+7.at first it looked ok to just do the network on the first async task and have another thread\task do the parsing and start the adapters moving. but since even if
+  i have the data stoed as json in shared prefs or serialized data or even DB i still need a loader or thread to parse the data off the ui thread. Since i already have in place a wait dialog and 
+  async task i'll use it to parse the data as well. If the json was very big, that it wont fir in memory i would be forced to save it in DB and process it separatly in a loader even after the
+  network operation.
+8. damn! the images are not thumbnails, they are big! no way android can process them, i'll need to read teh headers and decode the images in a smaller scale, then save it as thumbnail in disk cache
+   maybe with the animal name as a file anme so it'll be easy to load. 
+9. tried to have one adapter class with variable impling left and right taking only the valid items from the adapter, no go, dunno why had no time to check, just splitted the 
+    collection to two arrays and created two different instances of my adapter, works...
+10. the list synchronization (two lists) works nicly, it's taken from a stakcoverflow post, i'm pretty sure i can do it without scroll listener only with one touch
+    listener but have no time to test it.
+11. thought if i'll create a liner layout for the right list and push it down using a stub view it would do the trick, no it doesn't. solution would be to add 1 to add fake item to the adapter that the
+     adapter would know, then we can have a specuial view for it in the adapter's createView() method, however i believe i need to point to listview or the adapter that it contains more than one item type
+     and specify how many item  types exists, again no time to do it.
+12.  no time for the last screen :-( i ouwld have passed the AnimalData as serializable to the next activity and take the imageCache from the application, then i would get my image and
+     description + name and simply display it.
+
+was fund, not sure i'm happy with the overall result, but that's what i had time for, even learned a bit :-)
+
+10x.
+
+
